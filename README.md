@@ -2,10 +2,6 @@
 
 A simple library that automates a lot of the boring stuff that Canvas2D makes you perform in order to draw actual primitive shapes, like triangles.
 
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
 ### Prerequisites
 
 -Clone the project or just the DrawLibrary.js and import it to your HTML5.
