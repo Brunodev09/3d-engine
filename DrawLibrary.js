@@ -36,8 +36,8 @@ class Shapes {
         switch (shape) {
             case "rect":
                 return "fillRect";
-            case "line":
-                return "line";
+            case "triangle":
+                return "triangle";
 
         }
     }
@@ -60,7 +60,7 @@ class Filler extends Draw {
                 let [point, dimension] = space;
                 this.context2D.fillStyle = color;
                 return this.context2D[shapeObject](point.x, point.y, dimension.w, dimension.h);
-            case "line":
+            case "triangle":
                 this.context2D.beginPath();
                 let lines = [...space];
                 let firstPoint = (lines.splice(0, 1))[0];
