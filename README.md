@@ -10,16 +10,15 @@ These instructions will get you a copy of the project up and running on your loc
 
 -Clone the project or just the DrawLibrary.js and import it to your HTML5.
 
-```
-Give examples
-```
 
 As we can't implement interfaces in Javascript without TypeScript, the Main.js is mandatory.
 
-Inside the function update:
-
+-Inside the function update:
+```
 Fill('triangle', [new Point(20, 20), new Point(20, 100), new Point(70, 100)], "none", "white");
 
 Fill(<String: shapeType>, [<Number Array of points to connect>], <String: fillColor>, <String: lineColor>);
+```
+
 
 
