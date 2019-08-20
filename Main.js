@@ -9,7 +9,7 @@ let cubeMesh, matProj;
 
 /* Loading assets after HTML loads. */
 window.onload = function () {
-    startDraw(200);
+    startDraw();
     W = window.drawCache.cx.canvas.width;
     H = window.drawCache.cx.canvas.height;
     ratio = H / W;
@@ -60,7 +60,7 @@ function screen() {
 
     Fill('rect', [new Point(0, 0), new Dimension(W, H)], "black", "black");
 
-    let fTheta = 1 * new Date().getTime()/1000;
+    let fTheta = 1 * new Date().getTime()/2000;
     let matRotX = new Projection(), matRotZ = new Projection();
     // Rotation Z
     matRotZ.matrix[0][0] = Math.cos(fTheta);
@@ -145,13 +145,6 @@ function multiplyMatrixVector(i, o, m) {
 
     if (w !== 0.0) o.x /= w; o.y /= w; o.z /= w;
 }
-
-class Accumulator {
-    static acc() {
-        acc++;
-    }
-}
-
 
 class Vec3d {
     constructor(x, y, z) {
