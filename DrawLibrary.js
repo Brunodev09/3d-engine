@@ -22,17 +22,15 @@ class DrawCanvas {
     static get Canvas() {
         return window.drawCache.cx;
     }
-    static setCanvas(fps) {
-        if (!fps) fps = 100;
+    static setCanvas() {
         window.drawCache = {};
         window.drawCache.c = document.getElementById('Game');
         window.drawCache.cx = window.drawCache.c.getContext('2d');
-        setInterval(update, fps);
     }
 }
 
 class Shapes {
-    static getShape(shape) {
+    static getShape(shape) { 
         switch (shape) {
             case "rect":
                 return "fillRect";

@@ -45,14 +45,17 @@ window.onload = function () {
     matProj.matrix[2][3] = 1;
     matProj.matrix[3][3] = 0;
 
+    update();
+
 }
 
-function startDraw(fps) {
-    DrawCanvas.setCanvas(fps);
+function startDraw() {
+    DrawCanvas.setCanvas();
 }
 
 function update() {
     screen();
+    window.requestAnimationFrame(update);
 }
 
 /* Cleaning the screen */
